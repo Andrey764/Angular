@@ -1,0 +1,14 @@
+<div [ngStyle]="{'font-size':'{{summary.TextSize}}px', 'font-family':'Verdana'}"><span>Name: </span>{{summary.Name}}</div>
+<div [ngStyle]="{'font-size':'{{summary.TextSize}}px', 'font-family':'Verdana'}"><span>Surname: </span>{{summary.Surname}}</div>
+<div [ngStyle]="{'font-size':'{{summary.TextSize}}px', 'font-family':'Verdana'}"><span>Age: </span>{{summary.Age}}</div>
+<div [ngStyle]="{'font-size':'{{summary.TextSize}}px', 'font-family':'Verdana'}"><span>Date of birth: </span>{{summary.Date}}</div>
+<img src="{{summary.Image}}" alt="MyPhoto">
+<h2>Языки</h2>
+<ul [ngClass]="{Head:true}">
+    <li [ngClass]="{Items:true, ActiveItems:true}" *ngFor="let language of Languages">{{language}}</li>
+</ul>
+<h2 [ngClass]="{Head:true}">Фреймворки</h2>
+<ul>
+    <li [ngClass]="{Items:true, ActiveItems:true}" *ngFor="let framework of Frameworks">{{framework | lowercase}}</li>
+</ul>
+<a href="{{summary.LinkGitHub}}">Ссылка на Github</a>

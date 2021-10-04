@@ -1,0 +1,16 @@
+.Items{
+    width: 100%;
+    border: 1px solid aqua;
+    border-radius: 3px;
+    margin: 5px 0;
+    width: 100px;
+}
+
+.ActiveItems:hover{
+    background-color: aqua;
+}
+.Head,
+.Items{
+    font-style: italic;
+    text-align: center;
+}
